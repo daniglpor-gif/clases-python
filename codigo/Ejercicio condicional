@@ -1,0 +1,32 @@
+ola1 = float(input("Puntuación de la ola 1: "))
+ola2 = float(input("Puntuación de la ola 2: "))
+ola3 = float(input("Puntuación de la ola 3: "))
+ola4 = float(input("Puntuación de la ola 4: "))
+
+# Buscamos las dos mejores olas
+
+if ola1 >= ola2 and ola1 >= ola3 and ola1 >= ola4:
+    mejor = ola1
+
+    if ola2 >= ola3 and ola2 >= ola4:
+        segunda = ola2
+    elif ola3 >= ola4:
+        segunda = ola3
+    else:
+        segunda = ola4
+
+elif ola2 >= ola1 and ola2 >= ola3 and ola2 >= ola4:
+    mejor = ola2
+
+    if ola1 >= ola3 and ola1 >= ola4:
+        segunda = ola1
+    elif ola3 >= ola4:
+        segunda = ola3
+    else:
+        segunda = ola4
+
+# ... 
+
+puntuacion = mejor + segunda
+
+print("Las dos mejores olas suman:", puntuacion)

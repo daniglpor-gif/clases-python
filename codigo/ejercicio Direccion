@@ -1,0 +1,3 @@
+direccion = input ("Introduce la dirección: ")
+print(direccion.split(","))
+ 

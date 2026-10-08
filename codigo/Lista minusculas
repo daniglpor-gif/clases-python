@@ -1,0 +1,4 @@
+mi_lista = ["DANI", "LEON", "CADIZ", "PLAYA"]
+mi_lista_minusculas = [nombre.lower() for nombre in mi_lista]
+
+print(mi_lista_minusculas)
